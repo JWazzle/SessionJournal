@@ -1,0 +1,73 @@
+/* src/styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.App {
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a,
+nav ul li button {
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: inherit;
+    border: 2px solid transparent; /* Initially transparent border */
+    border-radius: 10px; /* Rounded corners */
+    transition: border-color 0.3s ease-in-out; /* Smooth transition for border color */
+    background-color: inherit;
+}
+
+nav ul li a:hover,
+nav ul li button:hover {
+    border-color: inherit; /* Change border color on hover */
+}
+
+/* Light mode styles */
+body.light-mode {
+    background-color: #f8f1e2;
+    color: #000000;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #0c0c0f;
+    color: #9ba6ca;
+}
+
+
+.login-form, .register-form {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+body.dark-mode .login-form, body.dark-mode .register-form {
+    background-color: #444656;
+    color: #767093;
+}
+
+.form-div {
+    margin: 16px;
+}
+
+.form-label {
+    margin: 10px;
+}
+
+/* * {
+    background: rgb(0 100 0 / 0.1) !important;
+  } */
